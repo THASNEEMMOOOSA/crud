@@ -1,0 +1,44 @@
+{% extends 'master.html' %}
+
+{% block content %}
+
+<h1>Details about  Emp id:{{p.eid}} -</h1>
+
+<div class="col-4 mx-auto">
+<div class="card" >
+    <img  src="https://cdn-icons-png.flaticon.com/128/8089/8089114.png" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+        <hr>
+      <h5 class="card-title">Name: {{p.name}}</h5>
+      <hr>
+      <p class="card-text">Emp id: {{p.eid}}</p>
+      <hr>
+      <p class="card-text">Email id : {{p.email}}</p>
+      <hr>
+      <p class="card-text">Mob No :{{p.mob}}</p>
+      <hr>
+      <p class="card-text">Address :{{p.address}}</p>
+      <hr>
+      <p class="card-text">Profession :{{p.prof}}</p>
+      <hr>
+      <p class="card-text">Age :{{p.age}}</p>
+
+
+    </div>
+  </div>
+</div>
+
+<a class="btn btn-info" href="/persons">Go back</a>    
+
+  <a href="/" class="btn btn-primary">Go to Main page</a>
+
+  <a href="delete/" class="btn btn-danger">Delete</a>
+
+  <a href="/updatepage/{{p.id}}" class="btn btn-secondary">Update</a>
+
+
+
+
+
+
+{% endblock %}
